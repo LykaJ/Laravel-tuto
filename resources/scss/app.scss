@@ -1,7 +1,49 @@
-.footer-links {
-    color : #6366F1;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap');
 
-    &:hover {
-        color: #4338CA;
+html {
+    background-color: #374151;
+    color: white;
+
+    .footer-links {
+        color : #C7D2FE;
+
+        &:hover {
+            color: #818CF8;
+        }
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+            background-color: white;
+            color: #374151;
+
+        .footer-links {
+            color : #6366F1;
+
+            &:hover {
+                color: #4338CA;
+            }
+        }
     }
 }
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+h1 {
+    font-size: 30pt;
+    font-weight: 600;
+}
+
+.heart {
+    color: #EC4899;
+}
+

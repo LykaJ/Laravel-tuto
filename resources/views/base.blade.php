@@ -6,8 +6,7 @@
 
     <title>@yield('title', config('app.name'))</title>
 
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css">
 
 </head>
 <body>
