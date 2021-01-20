@@ -6,17 +6,22 @@
 
     <title>@yield('title', config('app.name'))</title>
 
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
 </head>
 <body>
-@yield('content')
+<main>
+    @yield('content')
+</main>
 <footer>
-    <p>
+    <p class="text-grey-600">
         &copy; Copyright {{ date('Y') }}
         &middot;
         @if(!Route::is('about'))
-            <a href="{{ route('about') }}">About us</a>
+            <a href="{{ route('about') }}" class="footer-links">About us</a>
         @else
-            <a href="{{ route('home') }}">Home</a>
+            <a href="{{ route('home') }}" class="footer-links">Home</a>
         @endif
     </p>
 </footer>
